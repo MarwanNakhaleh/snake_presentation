@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>jQuery: An Interactive Introduction</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>jQuery: An Interactive Introduction</h1>
+					<h3>Make your websites pop!</h3>
+					<p>
+						<small>Presented by <a href="http://www.marwannakhaleh.com">Marwan Nakhaleh</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>What is jQuery?</h2>
+					<p>
+						jQuery is a cross-browser, cross-platform Javascript library designed to simplify client-side Javascript scripting.[1]
+					</p>
+					<p>
+						jQuery allows you to change, append to, remove, and perform other operations on DOM elements.
+					</p>
+					<p>
+						<small>[1]: https://en.wikipedia.org/wiki/JQuery</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Different parts of jQuery</h2>
+					<p>
+						<b><u>jQuery:</u></b> The core library that allows you to do Javascript functions more easily.
+					</p>
+					<p>
+						<b><u>jQuery UI:</u></b> The addition to jQuery that provides more functionality for cool user interface stuff like drag and drop, animation, and element interactivity.
+					</p>
+					<p>
+						<b><u>jQuery Mobile:</u></b> The addition to jQuery that optimizes jQuery and jQuery UI performance on mobile devices.
+					</p>
+				</section>
+
+				<section>
+					<h2>Including jQuery in your website</h2>
+					<p>
+						Add the following lines of markup to your HTML files to include jQuery, preferably in the &lt;head&gt; section:
+					</p>
+					<p><i>
+						&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js&quot;&gt;&lt;/script&gt;<br>
+						&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js&quot;&gt;&lt;/script&gt;<br>
+						&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js&quot;&gt;&lt;/script&gt;
+					</i></p>
+					<p>
+						The numbers are the versions of each module; update those as updates come out for them.
+					</p>
+				</section>
+
+				<section>
+					<h2>Example jQuery code</h2>
+					<p>$(document).ready(function(){<br>
+						$("a").click(function(event){<br>
+						alert("You can't click this link!");<br>
+						event.preventDefault();<br>
+						});<br>
+					});</p>
+				</section>
+
+				<section>
+					<h2>Now that we have jQuery, we're ready for a...</h2>
+				</section>
+
+				<section>
+					<h1>LIVE DEMO!!1!</h1>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
